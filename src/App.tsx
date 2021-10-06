@@ -1,9 +1,10 @@
-import './scss/App.scss';
+import './scss/index.scss';
+// import HeroSection from './sections/HeroSection';
 
 function App() {
   return (
     <div id="App">
-      
+        {/* <HeroSection/> */}
     </div>
   );
 }

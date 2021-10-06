@@ -1,0 +1,28 @@
+$clr-white: #ffffff;
+$clr-black: #232323;
+
+$clr-green-400: #aad266;
+$clr-green-500: #7ea738;
+
+$clr-blue-100: #f1faff;
+$clr-blue-200: #47b9bf;
+$clr-blue-600: #0b2d72;
+$clr-blue-900: #112856;
+
+:root {
+    --clr-font-default: #{$clr-black};
+    --clr-font-primary: #{$clr-white};
+    --clr-font-secondary: #{$clr-blue-600};
+    --clr-font-tertiary: #{$clr-blue-200};
+
+    --clr-bg-default: #{$clr-white};
+    --clr-bg-light: #{$clr-blue-100};
+    --clr-bg-dark: #{$clr-blue-600};
+    --clr-bg-darker: #{$clr-blue-900};
+    --clr-bg-lighten: rgba(255, 255, 255, 0.05);
+
+    // Accent colors for the font and / or the icon backgrounds
+    --clr-accent-green: #{$clr-green-400};
+    --clr-accent-green-darker: #{$clr-green-500};
+    --clr-accent-blue: #{$clr-blue-200};
+}

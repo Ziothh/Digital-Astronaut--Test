@@ -1,0 +1,32 @@
+.bg {
+    // Dark font color
+    background: var(--clr-bg-default);
+    color: var(--clr-font-default);
+
+    &-light {
+        background: var(--clr-bg-light);
+    }
+
+    // Light font color
+    &-dark {
+        background: var(--clr-bg-dark);
+        color: var(--clr-font-primary);
+    }
+    &-darker {
+        background: var(--clr-bg-darker);
+        color: var(--clr-font-primary);
+    }
+    &-accent-green {
+        background: var(--clr-accent-green);
+        color: var(--clr-font-primary);
+    }
+    &-accent-blue {
+        background: var(--clr-accent-blue);
+        color: var(--clr-font-primary);
+    }
+    &-lighten {
+        // ! Only use this on a dark bg
+        background: --clr-bg-lighten;
+        color: var(--clr-font-primary);
+    }
+}

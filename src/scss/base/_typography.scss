@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+html {
+    color: var(--clr-font-default);
+    font-family: "Open Sans", sans-serif;
+}
+
+.font-default {
+    color: var(--clr-font-default);
+}
+.font-primary {
+    color: var(--clr-font-primary);
+}
+.font-secondary {
+    color: var(--clr-font-secondary);
+}
+.font-tertiary {
+    color: var(--clr-font-tertiary);
+}
+
+// Base stylings
+p {
+    font-size: 1.6rem;
+    line-height: 24px;
+    font-weight: 600;
+
+    &.text-thin {
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    &.text-fat {
+        font-weight: 700;
+        // line-height: 24px;
+    }
+    &.text-sm {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    &.text-ssm {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+h1 {
+    font-size: 11rem;
+    line-height: 10rem;
+    height: min-content;
+    font-weight: 800;
+    color: var(--clr-font-primary);
+}
+h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 800;
+    color: var(--clr-font-secondary);
+}
+
+.active,
+.accent {
+    color: var(--clr-accent-green);
+}
