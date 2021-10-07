@@ -3,7 +3,7 @@
 De site is volledig gemaakt in ReactJS en geschreven in TypeScript. SCSS werd gebruikt als vervanger voor CSS.
 
 ## Extra
- - De site is volledig gesponsive.
+ - De site is volledig responsive.
  -  Wordt [hier](https://digital-astronaut-test.netlify.app/) gehosted
 
 ## Dev
