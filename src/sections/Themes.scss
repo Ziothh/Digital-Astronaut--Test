@@ -1,0 +1,42 @@
+#themes {
+    align-items: center;
+    justify-content: center;
+
+    padding-block: 170px;
+
+    .content {
+        width: 100%;
+        max-width: 1110px;
+
+        margin-bottom: 63px;
+
+        display: flex;
+        flex-direction: column;
+
+        .span-container {
+            max-width: 460px;
+
+            align-self: flex-start;
+
+            span {
+                margin: 0;
+                padding: 0;
+
+                display: inline;
+
+                color: var(--clr-font-default);
+
+                text-transform: uppercase;
+                line-height: normal;
+            }
+        }
+        .theme-cards {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+    }
+}

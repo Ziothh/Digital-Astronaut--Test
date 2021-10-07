@@ -1,3 +1,5 @@
+import Icon from "./Icon"
+
 interface Props {
     text: string
     href: string
@@ -8,7 +10,7 @@ interface Props {
 const CardCTA: React.FC<Props> = ({text, href, icon}) => {
     return (
         <div className="webinar-card-cta-row">
-            <div className="icon bg-accent-green">{icon}</div>
+            <Icon>{icon}</Icon>
             <a href={href}>{text}</a>
         </div>
     )

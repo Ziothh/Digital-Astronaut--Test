@@ -1,0 +1,9 @@
+.icon {
+    $iconsize: 40px;
+    width: $iconsize;
+    height: $iconsize;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

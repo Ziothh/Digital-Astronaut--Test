@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './sections/HeroSection';
 import Why from './sections/Why';
 import Themes from './sections/Themes';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Why/>
             <Themes/>
         </main>
+        <Footer/>
     </div>
   );
 }
