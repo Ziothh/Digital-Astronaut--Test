@@ -26,7 +26,7 @@
     }
     &-lighten {
         // ! Only use this on a dark bg
-        background: --clr-bg-lighten;
+        background: var(--clr-bg-lighten);
         color: var(--clr-font-primary);
     }
 }

@@ -55,6 +55,37 @@
                 hr {
                     height: 15px;
                 }
+                h2 {
+                    font-size: 1.89rem;
+                }
+            }
+        }
+        @media screen and (max-width: 430px) {
+            & {
+                h1 {
+                    font-size: 7rem;
+                    line-height: 7rem;
+                }
+                hr {
+                    height: 12px;
+                }
+                h2 {
+                    font-size: 1.65rem;
+                }
+            }
+        }
+        @media screen and (max-width: 380px) {
+            & {
+                h1 {
+                    font-size: 6rem;
+                    line-height: 6rem;
+                }
+                hr {
+                    height: 10px;
+                }
+                h2 {
+                    font-size: 1.39rem;
+                }
             }
         }
     }

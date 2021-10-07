@@ -1,0 +1,27 @@
+.footer-card {
+    height: 240px;
+    max-width: 255px;
+    min-width: 255px;
+
+    padding: 31px;
+
+    flex: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .footer-card-info {
+        display: flex;
+        flex-direction: column;
+
+        p,
+        a {
+            line-height: 2rem;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
