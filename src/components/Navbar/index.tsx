@@ -18,8 +18,9 @@ const Navbar = () => {
         })
 
         window.addEventListener("resize", () => {
+            console.log("test")
             if(body.offsetWidth < 681) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
-            else setUseHamburgerNav(false)
+            else if (window.pageYOffset < 80) setUseHamburgerNav(false)
         })
         
     // eslint-disable-next-line react-hooks/exhaustive-deps
