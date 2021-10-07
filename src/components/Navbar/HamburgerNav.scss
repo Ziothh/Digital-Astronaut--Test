@@ -16,6 +16,24 @@
     &.nav-open {
         transform: translateX(500px);
         transition: 400ms ease;
+
+        @media screen and (max-width: 520px) {
+            & {
+                transform: translateX(600px);
+            }
+            nav {
+                padding-left: 50px;
+            }
+        }
+        @media screen and (max-width: 410px) {
+            & {
+                transform: translateX(650px);
+            }
+
+            nav {
+                padding-left: 50px;
+            }
+        }
     }
 
     .nav-hamburger {
