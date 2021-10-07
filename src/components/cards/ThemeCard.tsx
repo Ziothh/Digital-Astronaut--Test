@@ -16,7 +16,7 @@ interface Props {
 }
 
 
-const ThemeCard: React.FC<Props> = ({image, accentColor, title, text, href}) => {
+const ThemeCard: React.FC<Props> = ({image, accentColor="no", title, text, href}) => {
     return (
         <div className="theme-card box-shadow">
             <div className="img-container">
@@ -26,7 +26,7 @@ const ThemeCard: React.FC<Props> = ({image, accentColor, title, text, href}) => 
                 <img src={image.src} alt={image.alt} />
             </div>
             <div className="theme-card-text">
-                <h2>{title}</h2>
+                <h2 className={`${accentColor}-accent`}>{title}</h2>
                 <p className="text-ssm">{text}</p>
             </div>
             <Icon className={`bg-accent-${accentColor}`}>
