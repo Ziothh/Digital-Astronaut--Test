@@ -12,7 +12,7 @@ const Navbar = () => {
 
         window.addEventListener("scroll", () => {
             if(window.pageYOffset > 99) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
-            else setUseHamburgerNav(false)
+            else if (window.screen.width > 680) setUseHamburgerNav(false)
         })
 
         window.addEventListener("resize", () => {
