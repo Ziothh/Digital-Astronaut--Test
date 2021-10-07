@@ -16,7 +16,7 @@ interface Props {
 const NavLinkGroup: React.FC<Props> = ({links, className}) => {
     return (
         <ul {...{className}}>
-            {links.map(({name, href, isActive}) => <NavLink {...{href, isActive}}>{name}</NavLink>)}
+            {links.map(({name, href, isActive}) => <NavLink key={name} {...{href, isActive}}>{name}</NavLink>)}
         </ul>
     )
 }

@@ -1,9 +1,28 @@
-// import { useState } from "react"
-import "./Navbar.scss"
-import NavLinkGroup from "./NavLinkGroup"
 import type { NavLinkData } from "./NavLinkGroup/NavLink"
+import { useEffect, useState } from "react"
+import StandardNavbar from "./StandardNavbar"
+import HamburgerNav from "./HamburgerNav"
 
 const Navbar = () => {
+    const [useHamburgerNav, setUseHamburgerNav] = useState(false)
+
+    useEffect(() => {
+        if(window.screen.width < 681) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
+        else setUseHamburgerNav(false)
+
+        window.addEventListener("scroll", () => {
+            if(window.pageYOffset > 99) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
+            else setUseHamburgerNav(false)
+        })
+
+        window.addEventListener("resize", () => {
+            if(window.screen.width < 681) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
+            else setUseHamburgerNav(false)
+        })
+        
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     // * Only needed when there actually are multiple pages. Use dummy data instead.
     // const [currentLink, setCurrentLink] = useState("Home")
     // const [currentLanguage, setCurrentLanguage] = useState("NL")
@@ -32,7 +51,7 @@ const Navbar = () => {
         },
     ]
 
-    const languageLinks = [
+    const languageLinks: NavLinkData[] = [
         {
             name: "NL",
             isActive: true,
@@ -44,13 +63,8 @@ const Navbar = () => {
             href: "#nl"
         },
     ]
-
-    return (
-        <nav>
-            <NavLinkGroup links={navLinks}/>
-            <NavLinkGroup className="languageLinks" links={languageLinks}/>
-        </nav>
-    )
+    
+    return useHamburgerNav ? <HamburgerNav {...{navLinks, languageLinks}}/> : <StandardNavbar {...{navLinks, languageLinks}}/>
 }
 
 
