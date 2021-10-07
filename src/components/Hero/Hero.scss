@@ -27,19 +27,18 @@
             text-indent: -8px;
         }
         hr {
-            width: calc(100% - 5px);
+            width: calc(100% - 3px);
         }
         h2 {
             font-size: 2.6rem;
             font-weight: 700;
             line-height: 2.6rem;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.15px;
         }
 
         h1,
         h2 {
             text-transform: uppercase;
-            letter-spacing: 0.2px;
         }
 
         hr {
@@ -60,6 +59,7 @@
                 }
                 h2 {
                     font-size: 1.89rem;
+                    letter-spacing: 0.1px;
                 }
             }
         }
@@ -90,6 +90,7 @@
                 }
                 h2 {
                     font-size: 1.39rem;
+                    letter-spacing: 0.3px;
                 }
             }
         }
