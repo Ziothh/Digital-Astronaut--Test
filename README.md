@@ -12,4 +12,4 @@ Om React the gebruiken moet je alle packages downloaden met dit command.
 
 Daarna kan je de site hosten via `npm start`. 
 
-Het wordt gehosted op [localhost:3000](localhost:3000/)
+Het wordt gehosted op [localhost:3000](localhost:3000)
