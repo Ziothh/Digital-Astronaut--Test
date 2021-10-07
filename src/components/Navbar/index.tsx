@@ -7,16 +7,18 @@ const Navbar = () => {
     const [useHamburgerNav, setUseHamburgerNav] = useState(false)
 
     useEffect(() => {
-        if(window.screen.width < 681) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
+        const body = document.querySelector("body") as HTMLBodyElement 
+
+        if(body.offsetWidth < 681) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
         else setUseHamburgerNav(false)
 
         window.addEventListener("scroll", () => {
-            if(window.pageYOffset > 99) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
-            else if (window.screen.width > 680) setUseHamburgerNav(false)
+            if(window.pageYOffset > 80) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
+            else if (body.offsetWidth > 680) setUseHamburgerNav(false)
         })
 
         window.addEventListener("resize", () => {
-            if(window.screen.width < 681) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
+            if(body.offsetWidth < 681) {if(useHamburgerNav === false) setUseHamburgerNav(true)}
             else setUseHamburgerNav(false)
         })
         

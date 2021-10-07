@@ -5,13 +5,13 @@
     right: 0;
 
     display: flex;
-    gap: 50px;
+    gap: 30px;
     // flex-direction: row;
 
     width: 1000px;
     height: 100vh;
 
-    transform: translateX(900px);
+    transform: translateX(920px);
 
     &.nav-open {
         transform: translateX(500px);
@@ -19,7 +19,7 @@
 
         @media screen and (max-width: 520px) {
             & {
-                transform: translateX(600px);
+                transform: translateX(650px);
             }
             nav {
                 padding-left: 50px;
@@ -27,11 +27,20 @@
         }
         @media screen and (max-width: 410px) {
             & {
-                transform: translateX(650px);
+                transform: translateX(680px);
             }
 
             nav {
                 padding-left: 50px;
+            }
+        }
+        @media screen and (max-width: 410px) {
+            & {
+                transform: translateX(690px);
+            }
+
+            nav {
+                padding-left: 40px;
             }
         }
     }
