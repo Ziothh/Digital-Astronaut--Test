@@ -14,8 +14,20 @@
 html {
     font-size: 62.5%; /* Sets the base font-size to 10px*/
     scroll-behavior: smooth;
+
+    scrollbar-color: var(--clr-accent-green) var(--clr-bg-dark);
+    scrollbar-width: thin;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body {
+    background: var(--clr-bg-default);
+}
+
+section {
+    display: flex;
+    align-items: center;
 }

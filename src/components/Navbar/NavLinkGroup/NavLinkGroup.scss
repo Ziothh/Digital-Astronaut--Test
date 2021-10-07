@@ -1,0 +1,20 @@
+ul {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+
+    gap: 20px;
+
+    li {
+        a {
+            padding: 5px;
+            line-height: 3rem;
+
+            &:hover {
+                padding-bottom: 5px;
+                border-bottom: 3px solid var(--clr-accent-green);
+            }
+        }
+    }
+}

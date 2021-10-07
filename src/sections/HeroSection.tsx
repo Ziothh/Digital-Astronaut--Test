@@ -6,8 +6,7 @@ const HeroSection = () => {
         <Hero 
             title="Link 2030"
             subtitle="Toekomstvisie op het Ecosysteem van de multifunctionele installaties"
-            // backgroundImage={`url(${HeroBackgroundImage})`}
-            backgroundImage={HeroBackgroundImage}
+            backgroundImage={{src: HeroBackgroundImage, alt: "Een neon-verlichte stad"}}
         />
             
     )

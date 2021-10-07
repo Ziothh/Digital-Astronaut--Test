@@ -1,0 +1,23 @@
+nav {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+
+    z-index: 999;
+
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+    .languageLinks {
+        gap: 0px;
+    }
+
+    // display: none;
+
+    @media screen and (max-width: 680px) {
+        & {
+            display: none !important;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+#why {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    flex-direction: column;
+    gap: 125px;
+
+    .why-info {
+        max-width: 540px;
+
+        p {
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .why-logos {
+        display: flex;
+        gap: 30px !important;
+    }
+
+    @media screen and (min-width: 800px) {
+        & {
+            gap: 50px;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            max-height: 522px;
+
+            .why-info {
+                flex: 3;
+            }
+            .webinar-card {
+                flex: 2;
+
+                position: relative;
+                top: 104px;
+            }
+        }
+    }
+}

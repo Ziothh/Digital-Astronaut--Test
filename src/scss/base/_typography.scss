@@ -19,7 +19,14 @@ html {
 }
 
 // Base stylings
-p {
+a {
+    text-decoration: none;
+    color: var(--clr-font-primary);
+}
+
+p,
+a,
+span {
     font-size: 1.6rem;
     line-height: 24px;
     font-weight: 600;

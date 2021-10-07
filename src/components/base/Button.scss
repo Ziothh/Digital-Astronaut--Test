@@ -1,0 +1,15 @@
+.btn-cta {
+    border: none;
+    text-transform: uppercase;
+
+    padding: 12px 40px;
+    padding-bottom: 14px;
+
+    border-bottom: 3px solid var(--clr-accent-green-darker);
+
+    &:hover {
+        background: var(--clr-accent-green-darker);
+        transform: scale(105%);
+        transition: all 100ms;
+    }
+}
